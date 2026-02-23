@@ -1,0 +1,29 @@
+# Git / VCS
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# History data (mounted as a volume at runtime instead)
+history/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (never bake into image)
+api.py
+.env
+*.env

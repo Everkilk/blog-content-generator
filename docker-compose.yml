@@ -1,0 +1,12 @@
+services:
+  bloggen:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      # Set your Google API key here or in a .env file alongside this compose file
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      # Persist generated blogs and images on the host machine
+      - ./history:/app/history
+    restart: unless-stopped
