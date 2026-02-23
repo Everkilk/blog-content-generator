@@ -25,6 +25,9 @@ api.py
 *.webp
 generated_image*
 
+# User-generated history data (blog content + images)
+history/
+
 # IDE
 .vscode/
 .idea/
